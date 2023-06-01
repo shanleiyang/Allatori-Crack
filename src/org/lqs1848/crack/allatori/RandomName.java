@@ -1,11 +1,6 @@
 package org.lqs1848.crack.allatori;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 /**
  * 随机名称
@@ -13,7 +8,7 @@ import java.util.Set;
 public class RandomName {
 	private static final int chaosLen = 6;
 	private static final String alp = "abcdefghijklmiopqrstuvwxyzABCDEFGHIJKLMIOPQRSTUVWXYZ";
-	private static List<String> seedList = List.of("Ii", "oO", "Pp", "xX", alp);
+	private static List<String> seedList = Arrays.asList("Ii", "oO", "Pp", "xX", alp);
 
 	// 同一个方法固定加密为相同的随机名称
 	private static Map<String, String> mark = new HashMap<>();
